@@ -1,0 +1,118 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(163, 67, 67);
+}
+
+.container {
+    position: relative;
+    max-width: fit-content;
+    width: 100%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 30px;
+    margin: 0 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    position: relative;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.PersonalInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.PersonalInfo label {
+    margin-right: 60px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-flex;
+    width: 100px;
+    text-align: center;
+}
+
+.PersonalInfo input {
+    margin-bottom: 5px;
+    width: calc(33% - 10px);
+}
+
+.Gender {
+    margin-top: 5px;
+}
+
+.Gender input {
+    margin: 0.4rem;
+}
+
+.container form {
+    margin-top: 10px;
+    position: relative;
+    min-height: 500px;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+p {
+    font-size: medium;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: small;
+}
+
+.Course {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Course label {
+    margin-right: 90px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-flex;
+    width: 100px;
+    text-align: center;
+}
+
+.Course input {
+    margin-bottom: 5px;
+    width: calc(33% - 10px);
+}
+
+
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.address label {
+    margin-right: 90px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-flex;
+    width: 100px;
+    text-align: center;
+}
