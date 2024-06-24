@@ -31,10 +31,9 @@ body {
 h3{
     color: #5d1616;
 }
-
     
 .formbody{
-    padding-top: 150px;
+    padding-top: 125px;
 }
 
 #applicationidform{
@@ -130,4 +129,35 @@ button {
     display: inline-flex;
     width: 100px;
     text-align: center;
+}
+
+hr.solid{
+    border-top: 3px solid #bbb;
+
+}
+
+@media screen and (max-width: 710px) {
+    .headertext{
+        font-size:x-small;
+    }
+    .formbody{
+        padding-top: 95px;
+    }
+}
+@media screen and (max-width: 569px) {
+    .headertext{
+        font-size:xx-small;
+    }
+    .formbody{
+        padding-top: 75px;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .headertext{
+        display: none;
+    }
+    .formbody{
+        padding-top: 75px;
+    }
 }
