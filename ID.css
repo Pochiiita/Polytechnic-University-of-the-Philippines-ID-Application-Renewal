@@ -1,20 +1,45 @@
 body {
+    font-family: 'Noto Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(163, 67, 67);
+    background: rgb(245,239,238);
 }
 
-.container {
-    position: relative;
-    max-width: fit-content;
+.header{
+    font-family: 'Cinzel', serif;
+    position: fixed;
+    top: 0;    
     width: 100%;
-    background-color: white;
-    border-radius: 7px;
-    padding: 30px;
-    margin: 0 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: #5d1616;
+    color: rgba(255,205,25,1);
+    align-content: center;
+    font-size:small;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.webtitle{
+    text-decoration:none;
+    color:rgba(255,205,25,1);
+}
+
+h3{
+    color: #5d1616;
+}
+
+    
+.formbody{
+    padding-top: 150px;
+}
+
+#applicationidform{
+    position:relative;
+    display:inline-flex;
 }
 
 .title {
@@ -58,16 +83,6 @@ body {
     min-height: 500px;
 }
 
-header {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-p {
-    font-size: medium;
-    text-align: center;
-}
 
 button {
     display: block;
