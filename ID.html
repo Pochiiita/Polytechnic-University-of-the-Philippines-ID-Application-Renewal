@@ -7,6 +7,8 @@
         <title>Polytechnic University of the Philippines</title>
         <link rel="stylesheet" href="ID.css">
         <script src="ID.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -29,13 +31,37 @@
                             <a href="#" class="webtitle">
                                 <h1>Polytechnic University of the Philippines</h1>
                             </a>
-                            <h2>The Countyry's 1sty PolyteychnicU</h2>
+                            <h2>The Countyry's 1st Polyteychnic University</h2>
                         </div>
                     </td>
                 </tr>
             </table>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#application">Application</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="formbody">
+
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                <h1>Polytechnic University of the Philippines</h1>
+                <p>The Countyry's 1st Polyteychnic University</p>
+                </div>
+            </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quidem. </p>    
+                </div>
+        </div>
+        <div class="formbody" id="application">
             <h3>Application for New / Replacement of Identification Card</h3>
             <br>
             <form id="applicationForm" onsubmit="handleSubmit(event)">
@@ -60,7 +86,7 @@
                             <td><input type="text" id="Givenname" name="Givenname" placeholder="Givenname" required></td>  
                             <td><input type="text" id="Middlename" name="Middlename" placeholder="Middlename" required></td>       
                         </tr>
-                    </div> 
+                    </div>
                 </table>
                 <br>
                 <fieldset>
@@ -147,7 +173,7 @@
                         <label for="contact">In case of emergency, please notify </label></br>
                     </div></br>
 
-                    
+
 
                     <div class=".completename">
                         <label for="comp">Complete Name</label></br>
@@ -177,7 +203,7 @@
                         </tr>
                     </table>
                     <br>
-                    
+
                     <hr class="solid">
 
                     <div class="application">
@@ -198,7 +224,14 @@
                             <option value="IOT">Institute of Technology</option>
                         </select>
                     </div></br>
-
+                
+                <div class="cont" id="contact">
+                    <label for="contactType">Contact Me </label></br>
+                    <label for="contactNum"><i class="fas fa-phone"></i> 09123456789 </label></br>
+                    <label for="contactEmail"><i class="fas fa-envelope"></i> annalynpelaez26@gmail.com </label></br>
+                    <label for="contactEmail"><i class="fas fa-envelope"></i> carloagas@gmail.com </label></br>
+                    <label for="Location"><i class="fa-map-marker-alt"></i> Anonas Street, Sta. Mesa Manila </label></br>
+                </div>
                 <button type="submit" onclick="Submit">Submit</button>
             </form>
             </div>

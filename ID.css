@@ -2,9 +2,12 @@ body {
     font-family: 'Noto Sans', sans-serif;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background: rgb(245,239,238);
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -15,7 +18,8 @@ body {
     background: #5d1616;
     color: rgba(255,205,25,1);
     align-content: center;
-    font-size:small;
+    font-size: small;
+    z-index: 2000;
 }
 
 .logo{
@@ -24,27 +28,63 @@ body {
 }
 
 .webtitle{
-    text-decoration:none;
-    color:rgba(255,205,25,1);
+    text-decoration: none;
+    color: rgba(255,205,25,1);
 }
 
 h3{
     color: #5d1616;
 }
     
-.formbody{
+.formbody, #home, #about, #application, #contact {
     padding-top: 125px;
+    width: 100%;
 }
 
 #applicationidform{
-    position:relative;
-    display:inline-flex;
+    position: relative;
+    display: inline-flex;
 }
 
 .title {
     position: relative;
     font-weight: bold;
     font-size: medium;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 .PersonalInfo {
@@ -138,17 +178,18 @@ hr.solid{
 
 @media screen and (max-width: 710px) {
     .headertext{
-        font-size:x-small;
+        font-size: x-small;
     }
-    .formbody{
+    .formbody, #home, #about, #application, #contact {
         padding-top: 95px;
     }
 }
+
 @media screen and (max-width: 569px) {
     .headertext{
-        font-size:xx-small;
+        font-size: xx-small;
     }
-    .formbody{
+    .formbody, #home, #about, #application, #contact {
         padding-top: 75px;
     }
 }
@@ -157,7 +198,14 @@ hr.solid{
     .headertext{
         display: none;
     }
-    .formbody{
+    .formbody, #home, #about, #application, #contact {
         padding-top: 75px;
     }
+}
+
+.cont{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
