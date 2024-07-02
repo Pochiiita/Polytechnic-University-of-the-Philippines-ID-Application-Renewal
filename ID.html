@@ -82,9 +82,9 @@
                     <td><label for="Middlename">Middle Name</label></td>
                 </tr>
                 <tr>
-                    <td><input type="text" id="Lastname" name="Lastname" placeholder="Lastname" required></td>
-                    <td><input type="text" id="Givenname" name="Givenname" placeholder="Givenname" required></td>
-                    <td><input type="text" id="Middlename" name="Middlename" placeholder="Middlename" required></td>
+                    <td><input type="text" id="Lastname" name="Lastname" placeholder="Last Name" required></td>
+                    <td><input type="text" id="Givenname" name="Givenname" placeholder="Given Name" required></td>
+                    <td><input type="text" id="Middlename" name="Middlename" placeholder="Middle Name" required></td>
                 </tr>
             </table>
             <br>
@@ -137,14 +137,46 @@
                 <tr>
                     <td><label for="address">Home Address</label></td>
                     <td><label for="phone">Phone / Mobile Number</label></td>
+                    <td><label for="email">Email Address</label> </td>
                 </tr>
                 <tr>
                     <td><input type="text" id="address" name="address" placeholder="Address" required></td>
-                    <td><input type="tel" id="phone" name="phone" placeholder="Contact Number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="Contact Number" required></td>
+                    <td><input type="email" id="email" name="email" placeholder="Email Address" required></td>
                 </tr>
             </table><br>
-            <label for="reason">Reason for ID Replacement</label><br>
-            <textarea id="reason" name="reason" placeholder="Type your reason here.." required></textarea><br>
+            <div class="emergency">
+                <h2>In Case of Emergency</h2>
+                <p class="subheading">Please Contact</p>
+                <table>
+                    <tr>
+                        <td><label for="completename">Full Name of Guardian</label></td>
+                        <td><label for="addressplace">Home Address</label></td>
+                        <td><label for="phonenum">Contact Number</label> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="completename" name="completename" placeholder="Full Name" required></td>
+                        <td><input type="text" id="addressplace" name="addressplace" placeholder="Home Address" required></td>
+                        <td><input type="phonenum" id="phonenum" name="phonenum" placeholder="Contact Number" required></td>
+                    </tr>
+                </table><br>
+            </div>
+            <label for="applicationType">Type of Application</label></br>
+                            <select id="applicationType" name="applicationType" required>
+                                <option value="new">New</option>
+                                <option value="transferee">Transferee</option>
+                                <option value="late filing">Late Filing</option>
+                                <option value="old id">Old ID</option>
+                                <option value="shiftee">Shiftee</option>
+                                <option value="damaged">Damaged</option>
+                                <option value="correction of entry">Correction of Entry</option>
+                                <option value="lhs">LHS</option>
+                                <option value="undergrad">Undergrad</option>
+                                <option value="COL">College of Law</option>
+                                <option value="Graduate School">Graduate School</option>
+                                <option value="OU">Open University</option>
+                                <option value="IOT">Institute of Technology</option>
+                            </select><br>
             <button class="button" type="submit">Submit</button>
         </form>
     </div>
