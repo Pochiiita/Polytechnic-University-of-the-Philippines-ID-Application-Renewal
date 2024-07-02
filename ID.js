@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             if (data.result === 'success') {
-                alert('Successful');
+                alert('Submitted Successfully');
             } else {
                 alert('Error');
             }
