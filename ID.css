@@ -1,6 +1,8 @@
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
 }
 
 .main{
@@ -11,319 +13,202 @@
     height: 100vh;
 }
 
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: 0;
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo{
-    color: #ee1b1be1;
-    font-size: 25px;
-    font-family: Arial;
-    padding-left: 10px;
-    float: left;
-    padding-top: 10px;
-    margin-top: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.icon .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .menu{
-    width: 400px;
+    display: flex;
+    align-items: center;
     height: 70px;
-    float: inline-end;
+    width: 400px;
+    float: center;
 }
 
-ul{
-    float: left;
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: red; /* Change this to your desired hover color */
+}
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+.loginform {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 8px;
+    color: white;
+    max-width: 400px;
+    width: 100%;
 }
 
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial;
+.loginform h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
 }
 
-ul li a:hover{
-    color: #ee1b1be1;
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
 }
 
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #ee1b1be1;
-    border: 2px solid #ee1b1be1;
-    margin-top: 13px;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-.btn:hover{
-    color: #000;
+.btnn {
+    width: 100%;
+    padding: 10px;
+    background: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
 }
 
-.btn:focus{
-    outline: none;
+.btnn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.content{
-    width: 1200px;
-    height: auto;
+.link a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.about, .contact, .apply {
+    padding: 40px;
+    background: white;
     margin: 20px;
-    color: #fff;
-    position: relative;
-
+    border-radius: 8px;
 }
 
-.content .par{
-    padding-left: 1px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 31px;
-}
 
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 1px;
-    margin-top: 5%;
-    letter-spacing: 2px;
-}
-
-.content .learn{
-    width: 160px;
-    height: 40px;
-    background: rgb(14, 238, 14);
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 1px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-
-.content .learn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.learn:hover{
-    background-color: #fff;
-}
-
-.content span{
-    color: #ee1b1be1;
-    font-size: 65px
-}
-
-.loginform{
-    width: 320px;
-    height: 400px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 1200px;
-    transform: translate(0%,-5%);
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.loginform h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #ee1b1be1;
-    font-size: 22px;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 15px;
-}
-
-.loginform input{
-    width: 320px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #ee1b1be1;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.loginform input:focus{
-    outline: none;
-}
-
-::placeholder{
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn{
-    width: 320px;
-    height: 40px;
-    background: #ee1b1be1;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-
-.btnn:hover{
-    background: #fff;
-    color: #ee1b1be1;
-}
-
-.btnn a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-.loginform .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.loginform .link a{
-    text-decoration: none;
-    color: #ee1b1be1;
-}
-
-.login{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: red;
-}
-
-.icons{
-    text-align: center;
-}
-
-.icons a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-
-.icons ion-icon:hover{
-    color: #ee1b1be1;
-}
-
-.class{
-    width: 1200px;
-    height: auto;
-    margin: 0px;
-    color: #fff;
-    position: relative;
-}
-
-.class .subtitle{
-    padding-left: 1px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 31px;
-    font-size: 50px;
-}
-
-.class h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 1px;
-    margin-top: 5%;
-    letter-spacing: 2px;
-}
-
-.contact-section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-.cont a {
-    margin-right: 10px;
-    text-decoration: none;
+.about h1, .contact h1 {
+    font-size: 32px;
     color: #333;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
+.about h1, .contact h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.about span, .contact span {
+    color: #1a73e8;
+}
+
+.about p, .contact p {
+    font-size: 18px;
+    color: #666;
 }
 
 .contact-form textarea {
-    margin-bottom: 10px;
+    width: 100%;
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
 .contact-form button {
-    width: 160px;
-    height: 40px;
-    background: rgb(14, 238, 14);
+    padding: 10px 20px;
+    background: #1a73e8;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 1px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
 }
 
-.contact-form button a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
+.footer {
+    background: #333;
+    padding: 20px;
+    text-align: center;
 }
 
-.button:hover{
-    background-color: #fff;
+.footerText {
+    color: white;
+    font-size: 16px;
+}
+
+#applicationForm {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+#applicationForm table {
+    width: 100%;
+}
+
+#applicationForm input, #applicationForm select, #applicationForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#applicationForm button {
+    padding: 10px 20px;
+    background: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.yr input {
+    width: calc(100% - 10px);
+}
+
+.Birthdate input {
+    width: calc(100% - 10px);
+}
+
+.Course select {
+    width: calc(100% - 10px);
 }
