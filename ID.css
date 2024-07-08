@@ -214,3 +214,14 @@ body {
 .Course select {
     width: calc(100% - 10px);
 }
+
+.back{
+    width: 3%;
+    padding: 5px;
+    background: red;
+    border: 10% solid;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-style: bold;
+    font-size: medium;
+}
