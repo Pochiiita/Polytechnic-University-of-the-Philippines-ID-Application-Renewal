@@ -86,7 +86,7 @@ body {
     margin-top: 50px;
 }
 
-.contents{
+.contentsAbout, .contentsContact{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,15 +198,33 @@ body {
     align-items: center;
 }
 
-.avatar table thead{
-    margin: 10px;
-    text-align: center;
-    font-weight: bold;
+
+.avatar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
 }
 
-.avatar table tbody{
-    margin: 10px;
+.avatar ul li {
+    margin: 0 15px;
+}
+
+.avatarAnnalyn{
+    list-style: none;
     text-align: center;
+}
+
+.avatarCarlo{
+    list-style: none;
+    text-align: center;
+}
+
+.avatarName{
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 0px;
 }
 
 .avatar img{
@@ -443,8 +461,16 @@ label{
         padding-left: 100px;
         content:"IDAR";
     }
-    .about, .contact, .apply {
-        max-width: 400px;
+    .about, .contact, .apply, .loginform{
+        max-width: 300px;
+    }
+
+    .contentsAbout{
+        margin-top: 150px;
+        margin-bottom: 225px;
+    }
+    .avatar ul {
+        display: inline-block;
     }
 }
 >>>>>>> 7205def816ee5deecd175bedcc7e250d371aad1c
