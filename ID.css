@@ -237,6 +237,7 @@ body {
     width: inherit;
     margin-bottom:0;
     position: absolute;
+    z-index: 0;
 }
 
 .footerText {
@@ -308,9 +309,10 @@ i{
     border: 10% solid;
     border-radius: 4px;
     position:fixed;
+    z-index: 1;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom: 40px;
 	right:40px;
     font-style: bold;
     font-size: medium;
