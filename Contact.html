@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ID Application and Renewal</title>
+    <title>Contact - PUP IDAR</title>
     <link rel="stylesheet" href="ID.css">
     <script src="ID.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,33 +15,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="icon">
-            <h2 class="logo">Polytechnic University of the Philippines ID Application and Renewal</h2>
+    <div class="navbar" id="NavBar">
+        <div class="webtitle">
+            <a href="ID.html"><img src="assets\pup_logo.png"></a>
+            <div class="icon">
+                <h2 class="logo" id="logoPUP">Polytechnic University of the Philippines</h2><br><h2 class="logo" id="logoIDAR">ID Application and Renewal</h2>
+            </div>
         </div>
-        <div class="menu">
+        
+
+        <div class="menu" id="Menu">
             <ul>
-                <li><a href="ID.html">HOME</a></li>
-                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="ID.html" class="menunav">HOME</a></li>
+                <li><a href="About.html" class="menunav">ABOUT</a></li>
                 <li><a href="#Contact">CONTACT</a></li>
+                <div class="dropdown">
+                    <li><button style="font-size:15px;" class="dropbtn" onclick="respNavBar()"><i class="fa fa-bars"></i></button></li>
+                    <div class="dropdown-content">
+                        <a href="ID.html">HOME</a>
+                        <a href="About.html" >ABOUT</a>
+                        <a href="#Contact">CONTACT</a>
+                    </div>
+                </div>
             </ul>
         </div>
+
     </div>
-    <div class="contact" id="Contact">
-        <h1>Polytechnic<br><span>University of the</span> <br>Philippines</h1>
-        <h4>Contact the Developers</h4>
-        <p class="cont">
-            <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
-            <a href="mailto:annalynpelaez26@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="mailto:carloagas@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/annalyn-belen-8a729121b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/carlo-agas-06147a2a8/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </p>
-        <h2>Suggestions and Comments</h2>
-        <form class="contact-form" action="mailto:annalynpelaez26@gmail.com" method="post" enctype="text/plain">
-            <textarea name="message" rows="5" placeholder="Your suggestions and comments here..."></textarea>
-            <button class="button" type="submit">Send</button>
-        </form>
+
+
+    <div class="contents">
+        <div class="contact" id="Contact">
+            <h1><span>Contact</span> Us</h1>
+            <h4>Contact the Developers at these Platforms</h4>
+            <p class="cont">
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i>  +12 3456 789</a><br>
+                <a href="mailto:annalynpelaez26@gmail.com"><i class="fas fa-envelope"></i>  annalynpelaez26@gmail.com</a><br>
+                <a href="mailto:carlo.agas341@gmail.com"><i class="fas fa-envelope"></i>    carlo.agas341@gmail.com</a><br>
+                <a href="https://www.linkedin.com/in/annalyn-belen-8a729121b/" target="_blank"><i class="fab fa-linkedin"></i>  Annalyn Belen</a><br>
+                <a href="https://www.linkedin.com/in/carlo-agas-06147a2a8/" target="_blank"><i class="fab fa-linkedin"></i> Carlo Agas</a>
+            </p>
+            <h2>Suggestions and Comments</h2>
+            <form class="contact-form" action="mailto:annalynpelaez26@gmail.com" method="post" enctype="text/plain">
+                <textarea name="message" rows="5" placeholder="Your suggestions and comments here..."></textarea>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footerText">© 2023 Polytechnic University of the Philippines. All Rights Reserved.</p>
     </div>
 </body>
 </html>

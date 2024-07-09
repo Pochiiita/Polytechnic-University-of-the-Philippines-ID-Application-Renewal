@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ID Application and Renewal</title>
+    <title>PUP ID Application and Renewal</title>
     <link rel="stylesheet" href="ID.css">
     <script src="ID.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -16,19 +16,33 @@
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <a href="ID.html"><div class="brand"><img src="assets\pup_logo.png"></div> </a>
-            <div class="icon">
-                <h2 class="logo">Polytechnic University of the Philippines ID Application and Renewal</h2>
+        <div class="navbar" id="NavBar">
+            <div class="webtitle">
+                <a href="ID.html"><img src="assets\pup_logo.png"></a>
+                <div class="icon">
+                    <h2 class="logo" id="logoPUP">Polytechnic University of the Philippines</h2><br><h2 class="logo" id="logoIDAR">ID Application and Renewal</h2>
+                </div>
             </div>
-            <div class="menu">
+            
+
+            <div class="menu" id="Menu">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="#home" class="menunav">HOME</a></li>
+                    <li><a href="About.html" class="menunav">ABOUT</a></li>
                     <li><a href="Contact.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <li><button style="font-size:15px;" class="dropbtn" onclick="navBarToggle()"><i class="fa fa-bars"></i></button></li>
+                        <div id="dropdownToggle" class="dropdown-content">
+                            <a href="#home">HOME</a>
+                            <a href="About.html" >ABOUT</a>
+                            <a href="Contact.html">CONTACT</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
+
         </div>
+
         <div class="content" id="home">
             <div class="loginform">
                 <h2>Login Here</h2>
@@ -36,14 +50,13 @@
                     <input type="password" name="password" placeholder="Enter Password Here" required>
                         <button class="btnn"><a href="#">Login</a></button>
                             <p class="link">Don't have an account<br><a href="#">Sign up</a> here</p>
-                            <a href="Application.html"><p class="login">SIS TOOLS</p></a>
+                            <p class="login"><a href="Application.html">SIS TOOLS</a></p>
                 <div class="icons">
                     <p>Request for Petition, Current Course Offering, Online ACE, ID Application | Renewal</p>
                 </div><br>
             </div>
         </div>
     </div>
-
     <div class="footer">
         <p class="footerText">© 2023 Polytechnic University of the Philippines. All Rights Reserved.</p>
     </div>

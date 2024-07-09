@@ -1,3 +1,6 @@
+//JavaScript object for Responsive Navigation Bar
+
+  
 // JavaScript object to store courses based on the selected college
 const coursesByCollege = {
     CCIS: [

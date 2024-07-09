@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ID Application and Renewal</title>
+    <title>About - PUP IDAR</title>
+    <link rel="icon" type="image/x-icon" href="assets\pup_logo.png">
     <link rel="stylesheet" href="ID.css">
     <script src="ID.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,31 +16,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="icon">
-            <h2 class="logo">Polytechnic University of the Philippines ID Application and Renewal</h2>
+    <div class="main">
+        <div class="navbar" id="NavBar">
+            <div class="webtitle">
+                <a href="ID.html"><img src="assets\pup_logo.png"></a>
+                <div class="icon">
+                    <h2 class="logo" id="logoPUP">Polytechnic University of the Philippines</h2><br><h2 class="logo" id="logoIDAR">ID Application and Renewal</h2>
+                </div>
+            </div>
+            
+
+            <div class="menu" id="Menu">
+                <ul>
+                    <li><a href="ID.html" class="menunav">HOME</a></li>
+                    <li><a href="#About" class="menunav">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                    <div class="dropdown">
+                        <li><button style="font-size:15px;" class="dropbtn" onclick="respNavBar()"><i class="fa fa-bars"></i></button></li>
+                        <div class="dropdown-content">
+                            <a href="ID.html">HOME</a>
+                            <a href="#About" >ABOUT</a>
+                            <a href="Contact.html">CONTACT</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
         </div>
-        <div class="menu">
-            <ul>
-                <li><a href="ID.html">HOME</a></li>
-                <li><a href="#About">ABOUT</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
-            </ul>
+
+    <div class="contents">
+        <div class="about" id="About">
+            <h1><span>About</span> Us</h1>
+            <p class="subtitle">
+                Welcome to the official Polytechnic University of the Philippines (PUP) ID Application & Renewal portal.
+                This streamlined platform provides PUP students, faculty, and staff an easy and efficient way to apply for
+                new identification cards or renew existing ones. Enjoy a hassle-free experience with our user-friendly interface
+                and ensure quick processing of your ID. Stay connected and access university services seamlessly with your PUP ID.
+                <br>
+                <br>
+                <h3>Developed By:</h3>
+                <div class="avatar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Belen, Annalyn P.</td>
+                                <td><br></td>
+                                <td>Agas, Carlo F.</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Back-End Developer</td>
+                                <td><br></td>
+                                <td>UI/UX Designer</td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets\avatar_annalyn.jpg" class="aboutPic" alt="Annalyn Belen"></td>
+                                <td><br></td>
+                                <td><img src="assets\avatar_carlo.jpg" class="aboutPic" alt="Carlo Agas"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </p>
         </div>
     </div>
-    <div class="about" id="About">
-        <h1>Polytechnic<br><span>University of the</span> <br>Philippines</h1>
-        <p class="subtitle">
-            Welcome to the official Polytechnic University of the Philippines (PUP) ID Application & Renewal portal.
-            This streamlined platform provides PUP students, faculty, and staff an easy and efficient way to apply for
-            new identification cards or renew existing ones. Enjoy a hassle-free experience with our user-friendly interface
-            and ensure quick processing of your ID. Stay connected and access university services seamlessly with your PUP ID.
-            <br>
-            <br>
-            <h3>Developed By:</h3>
-            Belen, Annalyn P.<br>
-            Carlo Agas<br>
-        </p>
+    <div class="footer">
+        <p class="footerText">© 2023 Polytechnic University of the Philippines. All Rights Reserved.</p>
     </div>
 </body>
 </html>
