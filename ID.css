@@ -303,6 +303,27 @@ i{
     width: calc(100% - 10px);
 }
 
+.back{
+    background: var(--maroon);
+    border: 10% solid;
+    border-radius: 4px;
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+    font-style: bold;
+    font-size: medium;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+.back i{
+    font-size:18px;
+    margin-top:21px;
+    color:white;
+}
 
 h3{
     color: var(--maroon);
@@ -338,9 +359,7 @@ label{
       float: right;
       display: block;
     }
-    /*.logo{
-        display:none;
-    }*/
+
   }
 
 
@@ -426,3 +445,4 @@ label{
         max-width: 400px;
     }
 }
+>>>>>>> 7205def816ee5deecd175bedcc7e250d371aad1c
