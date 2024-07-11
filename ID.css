@@ -83,7 +83,8 @@ body {
     align-items: center;
     height: calc(100vh - 144px);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 125px;
+    margin-bottom:25px;
 }
 
 .contentsAbout, .contentsContact{
@@ -91,14 +92,15 @@ body {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 144px);
-    margin-top: 50px;
+    margin-top: 125px;
+    margin-bottom:25px;
     width:100%;
 }
 
 .contentsApply {
     display: flex;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 125px;
+    margin-bottom: 25px;
     justify-content: center;
     align-items: center;
     height: calc(100% - 94px);
